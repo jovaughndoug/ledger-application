@@ -13,10 +13,10 @@ public class Transaction {
     @Override
     public String toString() {
         return "Transaction" +
-                "date=" + date +
-                ", time=" + time +
-                ", vendor='" + vendor + '\'' +
-                ", description='" + description + '\'' +
+                "date = " + date +
+                ", time = " + time +
+                ", vendor = '" + vendor + '\'' +
+                ", description = '" + description + '\'' +
                 ", amount=" + amount +
                 '}';
     }
@@ -47,6 +47,26 @@ public class Transaction {
 
     public Double getAmount() {
         return amount;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public void setTime(LocalTime time) {
+        this.time = time;
+    }
+
+    public void setVendor(String vendor) {
+        this.vendor = vendor;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setAmount(Double amount) {
+        this.amount = amount;
     }
 }
 
