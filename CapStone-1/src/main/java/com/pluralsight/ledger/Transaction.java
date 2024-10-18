@@ -10,15 +10,23 @@ public class Transaction {
     private String description;
     private Double amount;
 
+    public String writeTofile() {
+        return
+                date +
+                "|" + time +
+                "|" + vendor +
+                "|" + description +
+                "|" + amount;
+    }
+
     @Override
     public String toString() {
         return "Transaction" +
-                "date = " + date +
-                ", time = " + time +
-                ", vendor = '" + vendor + '\'' +
-                ", description = '" + description + '\'' +
-                ", amount=" + amount +
-                '}';
+                " Date:  " + date +
+                " Time:  " + time +
+                " Vendor:  '" + vendor + '\'' +
+                " Description:  '" + description + '\'' +
+                " Amount:$ " + amount;
     }
 
     public Transaction(LocalDate date, LocalTime time, String vendor, String description, Double amount) {
