@@ -23,11 +23,17 @@ and view the data in various ways. Also allows user to add transactions to file.
 * FileIO.java: Controls writing to and reading from the CSV file.
 
 # New Lessons
+
+![Screenshot (1)](https://github.com/user-attachments/assets/890ebe72-dc17-4ffc-b148-2f86237c3393)
+
 ## Creating Filters For Data
 The reportScreen method has a switch case screen that 
 allows the user to search though the CSV file with 
 different filters. Each of the different cases manipulates the
-data to only show whatever option the user chooses
+data to only show whatever option the user chooses.
+
+![Screenshot (2)](https://github.com/user-attachments/assets/a26712b5-9d37-45ac-a0dc-e3c6f0447477)
+
 ## LocalDate & LocalTime Class
 The LocalDate & LocalTime classes was a pivotal part of this program
 These classes can be used as a data type for dates and times.
